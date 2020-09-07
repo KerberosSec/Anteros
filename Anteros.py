@@ -8,10 +8,10 @@ GitHub: https://github.com/Diego333-ms
 Group: Kerberos Sec
 Version: 1.0
 """
-import os #MÃ³dulo de Comandos do Sistema
-import requests #MÃ³dulo que faz a ConexÃ£o com a API dos Encurtadores
-import time #MÃ³dulo de funÃ§Ãµes para gerenciar delay e tempo
-from shutil import which #MÃ³dulo para Verificar Requisitos do Programa
+import os #Módulo de Comandos do Sistema
+import requests #Módulo que faz a Conexão com a API dos Encurtadores
+import time #Módulo de funções para gerenciar delay e tempo
+from shutil import which #Módulo para Verificar Requisitos do Programa
 
 #Cores Utilizadas no Programa/Algoritmo
 R = '\033[31m' # Vermelho
@@ -30,7 +30,7 @@ def dependencies(): #Abstração que verifica Requisitos #{
     print ("\n" + W + "[" + R + "OFF" + W + "]" + C + " Servidor não Ativo")
     stop()
   time.sleep (2.5)
-  pkgs = ["python3", "tput", "bash", "curl"]
+  pkgs = ["python3", "bash", "curl"]
   inst = True
   for pkg in pkgs:
         present = which(pkg)
