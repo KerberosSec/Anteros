@@ -6,5 +6,5 @@ The Anteros project arose from the need to conduct cyber-security studies involv
 *INSTALAÇÃO:*
 git clone https://github.com/Diego333-ms/Anteros
 cd Anteros
-bash install.sh
+bash install.sh or bash pc_install.sh
 ./Anteros.py or python3 Anteros.py
