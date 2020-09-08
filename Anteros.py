@@ -21,7 +21,8 @@ W = '\033[0m'  # Branco
 
 def dependencies(): #Abstração que verifica Requisitos #{
   print (G + "[" + W + "+" + G + "]" + C + " Verificando Dependências..." + W)
-  print ("\n" + G + "[" + W + "+" + G + "]" + C + " Verificando Status dos Serviços...")
+  time.sleep(1)
+  print (G + "[" + W + "+" + G + "]" + C + " Verificando Status dos Serviços...")
   server1 = requests.get("https://is.gd")
   server2 = requests.get("https://tinyurl.com")
   if (server1.status_code == 200 and server2.status_code == 200):
@@ -29,7 +30,7 @@ def dependencies(): #Abstração que verifica Requisitos #{
   else:
     print ("\n" + W + "[" + R + "OFF" + W + "]" + C + " Servidor não Ativo")
     stop()
-  time.sleep(2)
+  time.sleep(1.5)
   pkgs = ["python3", "bash", "curl"]
   inst = True
   for pkg in pkgs:
@@ -198,5 +199,5 @@ except KeyboardInterrupt:
  stop()
 
 finally:
- print ("\n" + G + "[" + W + "+" + G + "]" + C + " Obrigado Por Utilizar o Programa" + G)
+ print ("\n" + G + "[" + W + "+" + G + "]" + C + " Obrigado Por Utilizar o Programa" + W)
 
