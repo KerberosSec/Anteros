@@ -7,8 +7,10 @@ setterm -foreground green
 printf "["
 setterm -foreground white
 printf "+"
+setterm -foreground green
+printf "] "
 setterm -foreground cyan
-printf "] Instalando Recursos e Requisitos...\n"
+Instalando Recursos e Requisitos...\n"
 setterm -foreground white
 apt-get update
 apt install python
