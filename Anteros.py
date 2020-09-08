@@ -29,7 +29,7 @@ def dependencies(): #Abstração que verifica Requisitos #{
   else:
     print ("\n" + W + "[" + R + "OFF" + W + "]" + C + " Servidor não Ativo")
     stop()
-  time.sleep (2.5)
+  time.sleep(2)
   pkgs = ["python3", "bash", "curl"]
   inst = True
   for pkg in pkgs:
@@ -83,7 +83,7 @@ def isgd(): #Definir opções do Programa
   elif (option == "02" or option == "2"): #Se a opção for 2 ou 02, será redirecionado para a abstração isgd_modificar()
      isgd_modificar()
   else: #No caso de uma resposta alternativa fora dos parâmetros 1 e 2 acima, será redirecionado para datilografar novamente
-     print ("\n" + R + "[-]" + R + " Opção Inválida")
+     print ("\n" + R + "[" + W + "-" + R + "]" + R + " Opção Inválida")
      time.sleep (2.5)
      __init__()
      isgd()
@@ -100,7 +100,7 @@ def verificar_url(url): #Verificar a Existência e Comunicação com a URL
     if (server.status_code == 200): #Se a resposta da Requisição for 200, indicando que o site ou serviço existe, passará para a próxima abstração
        encurtar_isgd1(url,server)
     else: #Se a Requisição resultar no status 400, indicando Erro, o código retornará
-       print ("\n" + R + "[-]" + R + " a URL %s está inativa!" %url)
+       print ("\n" + R + "[" + W + "-" + R + "]" + R + " a URL %s está inativa!" %url)
        time.sleep(2)
        __init__()
        isgd_encurtar()
@@ -126,7 +126,7 @@ def verificar_url2(url): #Verificar a Existência e Comunicação com a URL
     if (server.status_code == 200):
        encurtar_isgd2(url,server)
     else:
-       print ("\n" + R + "[-]" + R + " a URL %s está inativa!" %url)
+       print ("\n" + R + "[" + W + "-" + R + "]" + R + " a URL %s está inativa!" %url)
        time.sleep(2)
        __init__()
        isgd_modificar()
@@ -161,7 +161,7 @@ def verificar_url3(url): #Verificar URL
     if (server.status_code == 200):
       encurtar_tinyurl(url,server)
     else:
-      print ("\n" + R + "[-]" + R + " a URL %s está inativa!" %url)
+      print ("\n" + R + "[" + W + "-" + R + "]" + R + " a URL %s está inativa!" %url)
       time.sleep(2)
       __init__()
       tinyurl()
@@ -198,5 +198,5 @@ except KeyboardInterrupt:
  stop()
 
 finally:
- print ("\n" + W + "Obrigado Por Utilizar o Programa")
+ print ("\n" + G + "[" + W + "+" + G + "]" + C + " Obrigado Por Utilizar o Programa" + G)
 
