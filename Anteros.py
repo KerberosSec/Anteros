@@ -9,6 +9,7 @@ Group: Kerberos Sec
 Version: 1.0
 """
 import os #Módulo de Comandos do Sistema
+import sys #Módulo de Recursos Sistemáticos
 import requests #Módulo que faz a Conexão com a API dos Encurtadores
 import time #Módulo de funções para gerenciar delay e tempo
 from shutil import which #Módulo para Verificar Requisitos do Programa
@@ -189,7 +190,7 @@ def iptarget_results(iptarget):
     print (server.text)
 
 def stop():
-    os.system("exit 1;")
+    sys.exit(1)
 
 try:
  dependencies()
