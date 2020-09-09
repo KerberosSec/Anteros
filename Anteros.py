@@ -203,6 +203,7 @@ def stop():
     sys.exit(1)
 
 def retorno():
+    time.sleep(2)
     print  ("\n" + G + "[" + W + "+" + G + "]" + C + " Deseja Escolher outra opção? " + W + "Y/n:")
     choice = str(input("\n" + W + "Anteros" + W + " > " + G))
     if (choice == "Sim" or choice == "sim" or choice == "yes" or choice == "Yes" or choice == "Y" or choice == "y"):
