@@ -107,7 +107,7 @@ def isgd_encurtar(): #Encurtar URL ou Link
        verificar_url(url)
     except requests.exceptions.MissingSchema:
        print ("\n" + R + "[" + W + "-" + R + "]" + W + " A URL %s é Inválida. Ex: https://%s" %(url,url))
-       time.sleep(2.5)
+       time.sleep(3.5)
        __init__()
        isgd_encurtar()
 
@@ -140,7 +140,7 @@ def isgd_modificar(): #Datilografia da URL ou Link
        verificar_url2(url)
     except requests.exceptions.MissingSchema:
        print ("\n" + R + "[" + W + "-" + R + "]" + W + " A URL %s é Inválida. Ex: https://%s" %(url,url))
-       time.sleep(2.5)
+       time.sleep(3.5)
        __init__()
        isgd_encurtar()
 
@@ -182,7 +182,7 @@ def tinyurl(): #Encurtamento usando o Tinyurl
        verificar_url3(url)
     except requests.exceptions.MissingSchema:
        print ("\n" + R + "[" + W + "-" + R + "]" + W + " A URL %s é Inválida Ex: https://%s" %(url,url))
-       time.sleep(2.5)
+       time.sleep(3.5)
        __init__()
        isgd_encurtar()
 
