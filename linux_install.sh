@@ -1,6 +1,7 @@
 #!/bin/bash
 
 instalador() {
+chmod +x Anteros.py
 setterm -foreground green
 printf "["
 setterm -foreground white
