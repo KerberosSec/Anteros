@@ -1,6 +1,6 @@
 ## Projeto Anteros:
 
-<p align="center"><img src="https://imgur.com/Wj2tFmb"></p>
+<p align="center"><img src="https://i.imgur.com/Wj2tFmb.png"></p>
 
 O Anteros é um Programa auxiliar de testes de Engenharia Social. Com ele voçe pode:
 ```
