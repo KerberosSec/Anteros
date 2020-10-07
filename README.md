@@ -32,6 +32,7 @@ Diego333-ms
 * cd Anteros
 * chmod +777 linux_install.sh
 * ./linux_install.sh
+* python3 Anteros.py or ./Anteros.py
 ```
 
 ## Termux / Android
@@ -41,4 +42,5 @@ Diego333-ms
 * cd Anteros
 * chmod +777 linux_install.sh
 * ./termux_install.sh
+* python3 Anteros.py or ./Anteros.py
 ```
