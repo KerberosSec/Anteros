@@ -1,10 +1,42 @@
-#Criador: Diego333-ms
+## Projeto Anteros:
 
-*DESCRIÇÃO:*
-The Anteros project arose from the need to conduct cyber-security studies involving Phishings and other types of security tests. Anteros is a program capable of shortening and modifying urls to carry out security tests.
+O Anteros é um Programa auxiliar de testes de Engenharia Social. Com ele voçe pode:
+```
+* Encurtar URLs 
+* Modificar URLs da forma como desejar
+* Rastrear Endereços IP (Internet Protocol)
+* Versátil aos pentests de Engenharia Social
+```
+## Desenvolvedor:
 
-*INSTALAÇÃO:*
-git clone https://github.com/Diego333-ms/Anteros
-cd Anteros
-bash install.sh or bash pc_install.sh
-./Anteros.py or python3 Anteros.py
+```
+Diego333-ms
+```
+
+## O Anteros foi Testado nos Sistemas:
+
+```
+* Kali Linux
+* Ubuntu
+* Termux
+```
+
+## Instalação do Anteros:
+
+### Kali Linux / Ubuntu 
+
+```
+* git clone https://github.com/Diego333-ms/Anteros
+* cd Anteros
+* chmod +777 linux_install.sh
+* ./linux_install.sh
+```
+
+## Termux / Android
+
+```
+* git clone https://github.com/Diego333-ms/Anteros
+* cd Anteros
+* chmod +777 linux_install.sh
+* ./termux_install.sh
+```
