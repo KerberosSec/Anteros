@@ -40,7 +40,7 @@ Diego333-ms
 ```
 * git clone https://github.com/Diego333-ms/Anteros
 * cd Anteros
-* chmod +777 linux_install.sh
+* chmod +777 termux_install.sh
 * ./termux_install.sh
 * python3 Anteros.py or ./Anteros.py
 ```
